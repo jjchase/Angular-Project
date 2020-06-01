@@ -1,0 +1,7 @@
+As an indecisive student I want to see a bunch of options showing up on the page together so I can easily see what I can pick from to watch.
+
+As a movie critic, I need a search element to specify the movie by title or year.
+
+As a busy and indecisive couple, we want to see the options for types of movies available to mix it up as we please.
+
+As a teen that loves to to have options always available when I am done watching something, I would like to have a place to see all of my watchlist items so I can keep adding and going through it.

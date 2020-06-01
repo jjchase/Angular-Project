@@ -1,0 +1,26 @@
+<div class="search-container">
+  <h1 class="title">Find a Film</h1>
+  <form #findForm="ngForm" (ngSubmit)="getFormData(findForm)" class="search-form">
+    <div class="search-items">
+      <label for="vote-text" class="label">Score</label>
+      <input type="text" class="input" id="vote-text" name="vote-text" placeholder="1 - 10" ngModel />
+      <label for="select-genre" class="label">Genre</label>
+      <select name="select-genre" id="select-genre" class="genre input" ngModel>
+        <!-- so we targeted the single object of genre which contains the objects of genres, thus genre.genres -->
+        <!-- attribute binding -->
+        <option [value]="singleGenre.id" *ngFor="let singleGenre of genre?.genres">{{ singleGenre.name }}</option>
+
+      </select>
+      <label for="year-text" class="label">Year</label>
+      <input type="text" class="input" name="year-text" id="year-text" ngModel />
+    </div>
+    <div class="button-div">
+      <button class="label button">S e a r c h</button>
+    </div>
+  </form>
+</div>
+<!-- movie from movie list ts comes here as the event -->
+<app-movie-list [data]="data" (added)="addToWatchlist($event)"></app-movie-list>
+
+
+<!-- element.name lets us create an element with the class altogether! class will be the name -->

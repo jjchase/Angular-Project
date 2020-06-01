@@ -1,0 +1,60 @@
+.button-picture:hover {
+  transform:scale(1.25);
+  transition-duration: 0.4s;
+  box-shadow: 2px 2px 7px 5px #d4e026;
+  z-index:3;
+ }
+
+ .button-picture{
+  position:relative;
+  z-index:1;
+ 
+}
+
+.delete-movie {
+  position:absolute;
+  right:-10px;
+  top:-10px;
+  border-radius:5px;
+}
+
+.image {
+  height: 150px;
+  box-shadow: 2px 2px 7px 5px #3b49a8;
+  border:3px solid black;
+}
+
+.main-image{
+  height:200px;
+}
+
+.movie-content {
+  width: 150px;
+  margin: 5px 10px;
+  margin-bottom:30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:0;
+  margin-right:30px;
+}
+.movies-container {
+  display: flex;
+  overflow-x:auto;
+  padding-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .movies-container {
+    overflow-x:none;
+    flex-wrap:wrap;
+    margin-top:10px;
+    padding-top:25px;
+    justify-content:space-around;
+  }
+  .movie-content{
+    margin:10px;
+  }
+
+}

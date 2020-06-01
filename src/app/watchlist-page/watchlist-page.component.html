@@ -1,0 +1,13 @@
+<div class="movies-container">
+
+  <div *ngFor="let movie of data; index as i" class="movie-content">
+    <div class="button-picture">
+      <button class="delete-movie"><i class="fas fa-minus-circle icon" (click)="removeFromWatchlist(i)"></i></button>
+      <img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="movie poster" class="image main-image" />
+    </div>
+    <p class="title-text">{{ movie.original_title }}</p>
+    <p>{{ movie.release_date }}</p>
+
+  </div>
+
+</div>

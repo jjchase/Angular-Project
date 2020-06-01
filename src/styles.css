@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background: rgb(2,0,45);
+    background: radial-gradient(circle, rgba(2,0,45,1) 12%, rgba(86,128,233,1) 63%, rgba(90,185,234,1) 100%);
+    font-family: 'Bangers', cursive;
+}
+
+p, img, div, button, body{
+    margin: 0;
+    padding:0;
+}
+
+.icon {
+    padding:2px;
+  }
+  
+a {
+    text-decoration:none;
+    color:black;
+    padding:10px;
+}
